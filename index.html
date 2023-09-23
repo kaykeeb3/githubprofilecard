@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>GitHub Profile Card</title>
+</head>
+<body>
+<div class="loading-container">
+  <div class="loading-dot"></div>
+  <div class="loading-dot"></div>
+  <div class="loading-dot"></div>
+</div>
+  
+ <div class="hidden content">
+    <div id="app">
+        <h1>Github Profile Card</h1>
+        <div class="button-container">
+          <input type="text" id="search-input" placeholder="Digite o nome de usuário do GitHub">
+          <button id="search-button" onclick="searchProfile()">Buscar</button>
+        </div>
+        <div id="profile-card"></div>
+        
+      </div>
+      
+      <footer>
+       <h4>
+        &copy;copyright todos os direitos reservados <a href="https://kaykedev.vercel.app/" id="link">Kayke-TI</a>
+       </h4>
+      </footer>
+    </div>
+    <script src="animation.js"></script>
+    <!-- Faz um fetch a API usando AJAX:  -->
+    <script src="main.js"></script>
+    
+</body>
+</html>

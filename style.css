@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
+
+:root {
+  --background: #000;
+  --card: #0F172A;
+  --border: #6738FF;
+  --color-font: #A1A1AA;
+  --color-font-secondary: #d4d4d8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inclusive Sans', sans-serif;
+  background-color: var(--background);
+}
+
+#app {
+    text-align: center;
+    margin-top: 30px;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+  font-style: italic;
+  margin-bottom: 2%;
+  color: var(--color-font);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 2%;
+  margin-bottom: 2%;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#profile-card {
+    background-color: var(--card);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+}
+
+#search-input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #e4e4e7;
+}
+
+#search-button {
+    background: var(--border);
+    color: var(--color-font-secondary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+#search-button:hover {
+    background-color: transparent;
+    opacity: 80%;
+    color: var(--color-font-secondary);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+img {
+  max-width: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  padding: 2px;
+}
+
+p,
+h2 {
+ margin-bottom: 4%;
+ font-size: 20px;
+ color: var(--color-font);
+}
+
+a {
+ text-decoration: underline;
+ color: var(--color-font-secondary);
+}
+
+footer {
+  top: 92%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  position: fixed;
+}
+
+ h4 {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 100;
+  color: var(--color-font-secondary);
+  margin: 50px;
+}
+
+#link {
+  color: var(--color-font);
+}
+
+
+/* animation */
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    
+  .loading-dot {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: var(--border);
+   margin: 0 10px;
+   animation: bounce 0.5s infinite alternate;
+  }
+    
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+    }
+    
+  .hidden {
+    display: none;
+  }
